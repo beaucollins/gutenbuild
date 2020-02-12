@@ -1,0 +1,13 @@
+name: Gutenbuild
+description: 'Build your WordPress Gutenberg block.'
+inputs:
+    src:
+        description: 'Directory of src files'
+        required: true
+        default: './src/'
+    
+runs:
+    image: 'Dockerfile'
+    args:
+        - build
+        - ${{ inputs.src }}
