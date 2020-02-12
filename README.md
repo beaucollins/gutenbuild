@@ -56,5 +56,5 @@ jobs:
 
 ```
 
-In this example, the results are uploaded as artifacts. In a differnt project we do this prior to kicking of a `PHPUnit` based test suite that requires these files to be present.
+In this example, the results are uploaded as artifacts. In a different project we do this prior to kicking of a `PHPUnit` based test suite that requires these files to be present.
 
