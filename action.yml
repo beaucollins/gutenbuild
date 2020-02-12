@@ -5,9 +5,15 @@ inputs:
         description: 'Directory of src files'
         required: true
         default: './src/'
-    
+
+    output_path:
+        description: 'Directory to store built files'
+        required: false
+        default: './build'
+
 runs:
+    using: 'docker'
     image: 'Dockerfile'
     args:
-        - build
         - ${{ inputs.src }}
+        - --output-path=${{ inputs.output_path }}

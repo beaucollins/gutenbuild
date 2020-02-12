@@ -1,10 +1,3 @@
-FROM node:alpine
+FROM coplusco/wp-scripts
 
-RUN mkdir /project
-
-WORKDIR /project
-
-COPY ./package.json .
-RUN npm install
-
-ENTRYPOINT ["npx", "wp-scripts"]
+ENTRYPOINT [ "/var/app/node_modules/.bin/wp-scripts", "build" ]
