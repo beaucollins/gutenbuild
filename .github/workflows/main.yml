@@ -14,9 +14,6 @@ jobs:
             src: 'example/src'
             output_path: 'example/build'
 
-        - name: wut
-          run: find .
-
         - uses: actions/upload-artifact@v1
           with:
             name: 'build'
