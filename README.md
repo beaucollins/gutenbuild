@@ -29,7 +29,7 @@ find ./example
 ./example/src/index.js
 ```
 
-The Plugin `example-plugin.php` `require_once()`'s the './example/build/index.asset.php` that `wp-scripts` builds for us.
+The Plugin `example-plugin.php` `require_once()`'s the `./example/build/index.asset.php` that `wp-scripts` builds for us.
 
 Use hte `beaucollins/gutenbuild` action in a GitHub workflow to build it for you in the cloud:
 
