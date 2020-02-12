@@ -3,13 +3,11 @@ on: [push]
 jobs:
     build:
         runs-on: ubuntu-latest
-        name: Testing out the build
+        name: Gutenbuild
         steps:
         - uses: actions/checkout@v2
 
-        - name: Gutenbuild
-          id: gutenbuild
-          uses: beaucollins/gutenbuild@master
+        - uses: beaucollins/gutenbuild@master
           with:
             src: 'example/src'
             output_path: 'example/build'
