@@ -44,7 +44,7 @@ jobs:
         steps:
         - uses: actions/checkout@v2
 
-        - uses: beaucollins/gutenbuild@master
+        - uses: beaucollins/gutenbuild@v1
           with:
             src: 'example/src'
             output_path: 'example/build'
